@@ -7,7 +7,9 @@ import Order "mo:core/Order";
 import Array "mo:core/Array";
 import Runtime "mo:core/Runtime";
 import Text "mo:core/Text";
+import Migration "migration";
 
+(with migration = Migration.run)
 actor {
   // Resume Types
   type WorkExperience = {
@@ -78,7 +80,6 @@ actor {
     content : Text;
   };
 
-  // Persistent State
   var resume : ?Resume = null;
   var nextBlogPostId = 0;
   var nextMemoryId = 0;

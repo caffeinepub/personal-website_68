@@ -9,14 +9,14 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="text-center sm:text-left">
-            <p className="font-serif text-base font-semibold text-foreground">My Personal Space</p>
+            <p className="font-serif text-base font-semibold text-foreground">Bhupesh Chaudhary</p>
             <p className="text-xs text-muted-foreground mt-0.5">
-              A digital home for thoughts, memories, and learning.
+              IAS Officer · Ladakh — A digital home for thoughts, memories, and learning.
             </p>
           </div>
           <div className="flex flex-col items-center sm:items-end gap-1">
             <p className="text-xs text-muted-foreground">
-              © {year} · All rights reserved
+              © {year} Bhupesh Chaudhary · All rights reserved
             </p>
             <p className="text-xs text-muted-foreground flex items-center gap-1">
               Built with{' '}

@@ -1,274 +1,48 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Personal Website with Resume, Blogs, Memories, Articles, and Kids' Study Material",
+  "title": "Personalise website for Bhupesh Chaudhary, IAS Officer, Ladakh",
   "requirements": [
     {
-      "id": "REQ-1",
-      "summary": "Create a warm, personal, and elegant visual theme with earthy tones and clean typography applied consistently across all pages",
+      "id": "REQ-10",
+      "summary": "Update homepage hero section to display 'Bhupesh Chaudhary' as an IAS Officer posted in Ladakh with a warm personal introduction",
       "acceptanceCriteria": [
-        "A consistent color palette of warm, earthy tones is applied site-wide.",
-        "Typography uses a readable, warm font pairing for headings and body text.",
-        "Layout feels personal and inviting, not corporate."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/index.css",
-          "operation": "modify",
-          "description": "Add CSS custom properties for the warm color palette (earthy beige, deep forest green, soft terracotta) and define global typography rules using serif/sans-serif font pairings that create a personal journal aesthetic"
-        },
-        {
-          "path": "frontend/tailwind.config.js",
-          "operation": "modify",
-          "description": "Extend Tailwind theme with custom colors matching the earthy palette (warm-beige, forest-green, terracotta) and configure custom font families for the personal journal feel"
-        }
-      ]
-    },
-    {
-      "id": "REQ-2",
-      "summary": "Build a homepage with hero section, navigation bar linking to all major sections, and site overview",
-      "acceptanceCriteria": [
-        "Hero section displays owner's name and a short personal bio.",
-        "Navigation bar has links to all five sections.",
-        "Homepage gives a clear overview of the site's purpose."
+        "The hero section on the homepage displays 'Bhupesh Chaudhary' as the primary heading.",
+        "The hero section includes a subtitle or tagline identifying him as an IAS Officer posted in Ladakh.",
+        "No generic placeholder names or filler text remain visible in the hero section."
       ],
       "file_operations": [
         {
           "path": "frontend/src/pages/HomePage.tsx",
-          "operation": "create",
-          "description": "Create homepage component with hero section (owner intro, personal bio), navigation bar with links to Resume, Blogs, Memories, Articles, and Kids' Study Material sections, and a brief site summary. Use the generated hero background image at frontend/public/assets/generated/hero-background.dim_1440x600.png as the hero background. Verify component usage instructions before implementing."
-        },
+          "operation": "modify",
+          "description": "Replace the hero section heading and welcome copy to display 'Bhupesh Chaudhary' as the primary name, add a subtitle identifying him as 'IAS Officer, Ladakh', and replace any generic placeholder text with a warm, personal introduction reflecting his identity and role. Ensure the hero maintains its existing background image and CTA button structure."
+        }
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "summary": "Update navigation bar, footer, page titles, and Resume page summary to reflect 'Bhupesh Chaudhary' and his role as IAS Officer, Ladakh across all pages",
+      "acceptanceCriteria": [
+        "The navigation bar displays 'Bhupesh Chaudhary' as the site brand/logo text.",
+        "The footer copyright and tagline reference 'Bhupesh Chaudhary'.",
+        "The Resume page's summary/about section introduces him as an IAS Officer posted in Ladakh.",
+        "No generic or placeholder owner names appear anywhere on the site."
+      ],
+      "file_operations": [
         {
           "path": "frontend/src/components/Navigation.tsx",
-          "operation": "create",
-          "description": "Create reusable navigation component with links to all five major sections (Resume, Blogs, Memories, Articles, Kids' Study Material) using the warm theme colors"
+          "operation": "modify",
+          "description": "Update the site brand/logo text in the navigation bar to display 'Bhupesh Chaudhary' instead of any generic placeholder. Maintain all existing navigation links and admin mode controls."
         },
         {
-          "path": "frontend/src/App.tsx",
+          "path": "frontend/src/components/Footer.tsx",
           "operation": "modify",
-          "description": "Wire HomePage as the root route ('/') and include Navigation component in the app layout so it appears consistently across all pages"
-        }
-      ]
-    },
-    {
-      "id": "REQ-3",
-      "summary": "Implement a Resume section displaying structured professional information fetched from the backend",
-      "acceptanceCriteria": [
-        "Resume page renders work experience entries in chronological order.",
-        "Skills and education are clearly displayed.",
-        "Resume data is stored in the backend and fetched on load."
-      ],
-      "file_operations": [
+          "description": "Update the footer copyright text and tagline to reference 'Bhupesh Chaudhary' instead of generic placeholder text. Keep the existing year display and caffeine.ai branding link intact."
+        },
         {
           "path": "frontend/src/pages/ResumePage.tsx",
-          "operation": "create",
-          "description": "Create Resume page that fetches resume data using getResume() backend method and displays summary/about, work experience timeline, education, and skills in a structured, elegant layout matching the warm theme"
-        },
-        {
-          "path": "frontend/src/components/WorkExperienceTimeline.tsx",
-          "operation": "create",
-          "description": "Create timeline component to display WorkExperience entries in chronological order with company, position, dates, and description"
-        },
-        {
-          "path": "frontend/src/App.tsx",
           "operation": "modify",
-          "description": "Add route '/resume' pointing to ResumePage"
-        }
-      ]
-    },
-    {
-      "id": "REQ-4",
-      "summary": "Implement a Blog section with listing page and individual post pages, fetching posts from the backend",
-      "acceptanceCriteria": [
-        "Blog listing page shows all posts as summary cards with title, date, and tags.",
-        "Clicking a blog card navigates to the full blog post page.",
-        "Blog posts are persisted in the backend.",
-        "An admin form allows creating new blog posts."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/pages/BlogListingPage.tsx",
-          "operation": "create",
-          "description": "Create blog listing page that fetches all blog posts using getAllBlogPosts() backend method and displays them as cards showing title, publication date, and tags. Each card links to the individual blog post page."
-        },
-        {
-          "path": "frontend/src/pages/BlogPostPage.tsx",
-          "operation": "create",
-          "description": "Create individual blog post page that fetches a single post using getBlogPost(id) backend method and displays full title, content, publication date, and tags"
-        },
-        {
-          "path": "frontend/src/components/BlogPostCard.tsx",
-          "operation": "create",
-          "description": "Create reusable blog post card component displaying title, date, and tags with click navigation to full post"
-        },
-        {
-          "path": "frontend/src/components/admin/AddBlogPostForm.tsx",
-          "operation": "create",
-          "description": "Create admin form component for creating new blog posts with title, content textarea, and tags input, calling createBlogPost() backend method on submit"
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Add routes '/blogs' for BlogListingPage and '/blogs/:id' for BlogPostPage"
-        }
-      ]
-    },
-    {
-      "id": "REQ-5",
-      "summary": "Implement a Memories section with masonry-style gallery displaying photo memories from the backend",
-      "acceptanceCriteria": [
-        "Memories are displayed in a visually appealing grid or masonry layout.",
-        "Each memory card shows an image, title, and description.",
-        "Memory entries are stored in and fetched from the backend.",
-        "An admin form allows adding new memory entries."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/pages/MemoriesPage.tsx",
-          "operation": "create",
-          "description": "Create memories gallery page that fetches all memories using getAllMemories() backend method and displays them in a masonry or grid layout with image, title, and description"
-        },
-        {
-          "path": "frontend/src/components/MemoryCard.tsx",
-          "operation": "create",
-          "description": "Create memory card component displaying image (from imageUrl), title, and description with warm theme styling"
-        },
-        {
-          "path": "frontend/src/components/admin/AddMemoryForm.tsx",
-          "operation": "create",
-          "description": "Create admin form component for adding new memories with title, description, and imageUrl inputs, calling addMemory() backend method on submit"
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Add route '/memories' pointing to MemoriesPage"
-        }
-      ]
-    },
-    {
-      "id": "REQ-6",
-      "summary": "Implement an Articles section with listing and full article pages, fetching articles from the backend",
-      "acceptanceCriteria": [
-        "Articles listing page shows all articles as cards with title, date, and excerpt.",
-        "Full article view renders the complete content.",
-        "Articles are persisted in the backend.",
-        "An admin form allows creating new articles."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/pages/ArticlesListingPage.tsx",
-          "operation": "create",
-          "description": "Create articles listing page that fetches all articles using getAllArticles() backend method and displays them as cards with title, publication date, and content excerpt. Each card links to the full article view."
-        },
-        {
-          "path": "frontend/src/pages/ArticlePage.tsx",
-          "operation": "create",
-          "description": "Create individual article page that fetches a single article using getArticle(id) backend method and displays full title, optional cover image, content, and publication date"
-        },
-        {
-          "path": "frontend/src/components/ArticleCard.tsx",
-          "operation": "create",
-          "description": "Create reusable article card component displaying title, date, and excerpt with click navigation to full article"
-        },
-        {
-          "path": "frontend/src/components/admin/AddArticleForm.tsx",
-          "operation": "create",
-          "description": "Create admin form component for creating new articles with title, content textarea, and optional coverImageUrl input, calling createArticle() backend method on submit"
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Add routes '/articles' for ArticlesListingPage and '/articles/:id' for ArticlePage"
-        }
-      ]
-    },
-    {
-      "id": "REQ-7",
-      "summary": "Implement a Kids' Study Material section with subject-organized educational content fetched from the backend",
-      "acceptanceCriteria": [
-        "Study material is organized and filterable by subject/category.",
-        "Each item card shows title, subject, and description.",
-        "Study material entries are persisted in the backend.",
-        "An admin form allows adding new study material items.",
-        "The section uses a slightly more playful, child-friendly visual style within the overall theme."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/pages/StudyMaterialPage.tsx",
-          "operation": "create",
-          "description": "Create study material page that fetches all items using getAllStudyMaterials() backend method, displays them in a colorful grid organized by subject with filtering capability, and applies a playful child-friendly visual style within the warm theme"
-        },
-        {
-          "path": "frontend/src/components/StudyMaterialCard.tsx",
-          "operation": "create",
-          "description": "Create study material card component displaying title, subject, and description with a slightly more playful, child-friendly design"
-        },
-        {
-          "path": "frontend/src/components/admin/AddStudyMaterialForm.tsx",
-          "operation": "create",
-          "description": "Create admin form component for adding new study material with title, subject, description, and content inputs, calling addStudyMaterial() backend method on submit"
-        },
-        {
-          "path": "frontend/src/hooks/useStudyMaterialFilter.ts",
-          "operation": "create",
-          "description": "Create custom hook for filtering study materials by subject category"
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Add route '/study-material' pointing to StudyMaterialPage"
-        }
-      ]
-    },
-    {
-      "id": "REQ-8",
-      "summary": "Add a simple admin mode toggle revealing content management forms for all sections",
-      "acceptanceCriteria": [
-        "A single admin toggle or simple PIN entry reveals content management forms.",
-        "Each section has a corresponding form to add/edit entries.",
-        "Admin mode is hidden from regular visitors."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/AdminToggle.tsx",
-          "operation": "create",
-          "description": "Create admin mode toggle component with simple PIN entry that manages admin mode state and displays it only to the owner"
-        },
-        {
-          "path": "frontend/src/contexts/AdminContext.tsx",
-          "operation": "create",
-          "description": "Create React context to manage admin mode state globally across the application"
-        },
-        {
-          "path": "frontend/src/components/admin/AdminPanel.tsx",
-          "operation": "create",
-          "description": "Create admin panel component that conditionally renders all admin forms (AddBlogPostForm, AddMemoryForm, AddArticleForm, AddStudyMaterialForm) and resume editor when admin mode is active"
-        },
-        {
-          "path": "frontend/src/components/admin/EditResumeForm.tsx",
-          "operation": "create",
-          "description": "Create admin form component for editing resume data (summary, work experience, education, skills) using updateResume() backend method"
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Wrap the app with AdminContext provider and integrate AdminToggle component into the layout so admin mode is available throughout the site"
-        }
-      ]
-    },
-    {
-      "id": "REQ-9",
-      "summary": "Wire the generated warm botanical hero background image into the homepage",
-      "acceptanceCriteria": [
-        "Hero section uses the generated background image.",
-        "Image is served from frontend/public/assets/generated.",
-        "Image complements the warm earthy color palette."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/pages/HomePage.tsx",
-          "operation": "modify",
-          "description": "Update HomePage hero section to use the generated background image at frontend/public/assets/generated/hero-background.dim_1440x600.png as a CSS background-image, ensuring it displays with appropriate sizing and positioning to complement the warm earthy palette"
+          "description": "Update the Resume page to ensure the summary section (fetched from backend) is displayed prominently and that any page-level title or introduction text identifies the owner as 'Bhupesh Chaudhary, IAS Officer, Ladakh'. If the page has hardcoded intro text separate from the backend summary, update it to reflect his identity."
         }
       ]
     }

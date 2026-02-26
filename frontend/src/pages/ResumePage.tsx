@@ -13,8 +13,8 @@ export default function ResumePage() {
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
       <div className="mb-10">
-        <h1 className="font-serif text-4xl font-bold text-foreground mb-2">Resume</h1>
-        <p className="text-muted-foreground">My professional background and expertise.</p>
+        <h1 className="font-serif text-4xl font-bold text-foreground mb-2">Bhupesh Chaudhary</h1>
+        <p className="text-muted-foreground font-medium">IAS Officer · Posted in Ladakh</p>
       </div>
 
       {isAdmin && <AdminPanel />}

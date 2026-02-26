@@ -1,17 +1,14 @@
 # Specification
 
 ## Summary
-**Goal:** Build a warm, personal multi-section website ("My Personal Space") with a homepage, Resume, Blogs, Memories, Articles, and Kids' Study Material sections, plus a simple owner-only admin mode for managing content.
+**Goal:** Personalise the existing website for Bhupesh Chaudhary, IAS Officer posted in Ladakh, replacing all generic placeholder text throughout the site.
 
 **Planned changes:**
-- Apply a consistent earthy, cozy visual theme (warm beige, forest green, soft terracotta) with serif/sans-serif typography across all pages
-- Build a homepage with a hero section (owner name + bio, botanical background image), navigation bar linking to all five sections, and a site overview
-- Implement a Resume section displaying summary, work experience timeline, education, and skills — data fetched from the backend
-- Implement a Blog section with a post listing page (cards with title, date, tags) and full post view; posts stored in the backend
-- Implement a Memories section with a grid/masonry photo gallery; each entry has a title, description, and image URL; stored in the backend
-- Implement an Articles section with a listing page (cards with title, date, excerpt) and full article view; stored in the backend
-- Implement a Kids' Study Material section with a subject-filterable grid using a slightly playful style; each item has a title, subject, description, and content/link; stored in the backend
-- Add a PIN-protected admin mode that reveals "Add New" forms for each section (Blog, Memories, Articles, Study Material, Resume)
-- Serve the hero background image as a static asset
+- Update the homepage hero section to display "Bhupesh Chaudhary" as the primary heading with a subtitle identifying him as an IAS Officer posted in Ladakh
+- Update the navigation bar brand/logo text to "Bhupesh Chaudhary"
+- Update the footer copyright and tagline to reference "Bhupesh Chaudhary"
+- Update the Resume/About page summary section to introduce him as an IAS Officer posted in Ladakh
+- Remove all remaining generic or placeholder owner names across the site
+- Pre-populate the backend resume data with a professional summary for Bhupesh Chaudhary, IAS Officer, Ladakh, stored in stable state
 
-**User-visible outcome:** Visitors can browse a warm, journal-style personal website across all five content sections; the owner can log into admin mode with a PIN to add and manage content directly on the site.
+**User-visible outcome:** The entire website is personalised for Bhupesh Chaudhary — his name and role as IAS Officer, Ladakh appear in the hero, navbar, footer, and resume section without any placeholder text remaining.

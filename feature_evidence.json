@@ -2,30 +2,9 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-create-a-warm-personal-and-elegant-visual-theme-for-the-entire-website-using-earthy-cozy-tones-e-g-warm-beige-deep-forest-green-soft-terracotta-with-clean-serif-sans-serif-typography-and-a-layout-that-feels-like-a-personal-journal-or-digital-home-apply-this-theme-consistently-across-all-pages-and-sections",
-      "featureTitle": "Create a warm, personal, and elegant visual theme for the entire website — using earthy, cozy tones (e.g., warm beige, deep forest green, soft terracotta) with clean serif/sans-serif typography and a layout that feels like a personal journal or digital home. Apply this theme consistently across all pages and sections.",
+      "featureId": "feature-update-the-homepage-hero-section-to-display-the-owner-s-name-bhupesh-chaudhary-introduce-him-as-an-ias-officer-posted-in-ladakh-and-replace-any-generic-placeholder-welcome-text-with-a-warm-personal-introduction-reflecting-this-identity",
+      "featureTitle": "Update the homepage hero section to display the owner's name 'Bhupesh Chaudhary', introduce him as an IAS Officer posted in Ladakh, and replace any generic placeholder welcome text with a warm, personal introduction reflecting this identity.",
       "files": [
-        "frontend/src/index.css",
-        "frontend/tailwind.config.js"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-1"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-build-a-homepage-with-a-hero-section-introducing-the-owner-a-navigation-bar-linking-to-all-major-sections-resume-blogs-memories-articles-kids-study-material-and-a-brief-summary-of-what-the-site-offers",
-      "featureTitle": "Build a homepage with a hero section introducing the owner, a navigation bar linking to all major sections (Resume, Blogs, Memories, Articles, Kids' Study Material), and a brief summary of what the site offers.",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/Navigation.tsx",
         "frontend/src/pages/HomePage.tsx"
       ],
       "components": [
@@ -36,16 +15,16 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-2"
+        "REQ-10"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-implement-a-resume-section-that-displays-structured-professional-information-including-a-summary-about-section-work-experience-timeline-education-and-skills-store-and-serve-resume-data-from-the-backend",
-      "featureTitle": "Implement a Resume section that displays structured professional information including a summary/about section, work experience timeline, education, and skills. Store and serve resume data from the backend.",
+      "featureId": "feature-update-the-site-s-navigation-bar-footer-page-titles-and-any-about-or-summary-sections-across-all-pages-to-reflect-the-owner-s-name-bhupesh-chaudhary-and-role-as-ias-officer-ladakh-replacing-all-generic-placeholder-identity-text",
+      "featureTitle": "Update the site's navigation bar, footer, page titles, and any 'About' or 'Summary' sections across all pages to reflect the owner's name 'Bhupesh Chaudhary' and role as IAS Officer, Ladakh — replacing all generic placeholder identity text.",
       "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/WorkExperienceTimeline.tsx",
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/components/Navigation.tsx",
         "frontend/src/pages/ResumePage.tsx"
       ],
       "components": [
@@ -56,134 +35,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-3"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-implement-a-blog-section-where-the-owner-can-create-store-and-display-blog-posts-each-post-should-have-a-title-content-body-publication-date-and-optional-tags-the-blog-listing-page-shows-all-posts-as-cards-clicking-a-card-opens-the-full-post",
-      "featureTitle": "Implement a Blog section where the owner can create, store, and display blog posts. Each post should have a title, content body, publication date, and optional tags. The blog listing page shows all posts as cards; clicking a card opens the full post.",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/BlogPostCard.tsx",
-        "frontend/src/components/admin/AddBlogPostForm.tsx",
-        "frontend/src/pages/BlogListingPage.tsx",
-        "frontend/src/pages/BlogPostPage.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-4"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-implement-a-memories-section-for-storing-and-displaying-personal-photo-memories-each-memory-entry-has-a-title-description-and-an-image-url-display-memories-in-a-masonry-style-or-grid-gallery-layout",
-      "featureTitle": "Implement a Memories section for storing and displaying personal photo memories. Each memory entry has a title, description, and an image URL. Display memories in a masonry-style or grid gallery layout.",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/MemoryCard.tsx",
-        "frontend/src/components/admin/AddMemoryForm.tsx",
-        "frontend/src/pages/MemoriesPage.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-5"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-implement-an-articles-section-for-publishing-long-form-articles-each-article-has-a-title-rich-text-content-publication-date-and-an-optional-cover-image-url-the-listing-page-shows-article-cards-clicking-opens-the-full-article",
-      "featureTitle": "Implement an Articles section for publishing long-form articles. Each article has a title, rich text content, publication date, and an optional cover image URL. The listing page shows article cards; clicking opens the full article.",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/ArticleCard.tsx",
-        "frontend/src/components/admin/AddArticleForm.tsx",
-        "frontend/src/pages/ArticlePage.tsx",
-        "frontend/src/pages/ArticlesListingPage.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-6"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-implement-a-kids-study-material-section-for-hosting-educational-content-created-for-children-each-item-has-a-title-subject-category-description-and-a-content-body-or-downloadable-link-items-are-displayed-in-a-friendly-colorful-grid-organized-by-subject",
-      "featureTitle": "Implement a Kids' Study Material section for hosting educational content created for children. Each item has a title, subject/category, description, and a content body or downloadable link. Items are displayed in a friendly, colorful grid organized by subject.",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/StudyMaterialCard.tsx",
-        "frontend/src/components/admin/AddStudyMaterialForm.tsx",
-        "frontend/src/hooks/useStudyMaterialFilter.ts",
-        "frontend/src/pages/StudyMaterialPage.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-7"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-add-a-simple-admin-mode-toggle-or-password-protected-panel-that-reveals-add-new-forms-for-each-section-blog-memories-articles-study-material-resume-this-allows-the-owner-to-manage-content-directly-from-the-site-without-a-separate-cms",
-      "featureTitle": "Add a simple admin mode (toggle or password-protected panel) that reveals 'Add New' forms for each section (Blog, Memories, Articles, Study Material, Resume). This allows the owner to manage content directly from the site without a separate CMS.",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/AdminToggle.tsx",
-        "frontend/src/components/admin/AdminPanel.tsx",
-        "frontend/src/components/admin/EditResumeForm.tsx",
-        "frontend/src/contexts/AdminContext.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-8"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-generate-a-warm-illustrative-hero-background-image-for-the-homepage-featuring-soft-botanical-nature-elements-leaves-soft-light-in-earthy-tones-to-reinforce-the-personal-and-welcoming-feel-of-the-site",
-      "featureTitle": "Generate a warm, illustrative hero background image for the homepage featuring soft botanical/nature elements (leaves, soft light) in earthy tones to reinforce the personal and welcoming feel of the site.",
-      "files": [
-        "frontend/src/pages/HomePage.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-9"
+        "REQ-11"
       ],
       "confidence": "high"
     }

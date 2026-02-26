@@ -1,11 +1,10 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 3,
-  "summary": "Personal website with sections for resume, blogs, memories, articles, and kids' study material.",
+  "projectStateVersion": 5,
+  "summary": "Personal website for Bhupesh Chaudhary, an IAS officer posted in Ladakh. Sections include resume, blogs, memories, articles, and kids' study material.",
   "architectural_notes": [],
   "known_issues": [],
   "isFixRequest": false,
-  "imageRequirements": "## Required Images\n- Soft botanical hero background illustration with leaves, warm golden light rays, and gentle nature textures in earthy beige, forest green, and soft terracotta tones (hero-background.dim_1440x600.png)",
   "existing_features": [
     {
       "id": "feature-create-a-warm-personal-and-elegant-visual-theme-for-the-entire-website-using-earthy-cozy-tones-e-g-warm-beige-deep-forest-green-soft-terracotta-with-clean-serif-sans-serif-typography-and-a-layout-that-feels-like-a-personal-journal-or-digital-home-apply-this-theme-consistently-across-all-pages-and-sections",
@@ -78,6 +77,22 @@
         "REQ-9"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-update-the-homepage-hero-section-to-display-the-owner-s-name-bhupesh-chaudhary-introduce-him-as-an-ias-officer-posted-in-ladakh-and-replace-any-generic-placeholder-welcome-text-with-a-warm-personal-introduction-reflecting-this-identity",
+      "title": "Update the homepage hero section to display the owner's name 'Bhupesh Chaudhary', introduce him as an IAS Officer posted in Ladakh, and replace any generic placeholder welcome text with a warm, personal introduction reflecting this identity.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-site-s-navigation-bar-footer-page-titles-and-any-about-or-summary-sections-across-all-pages-to-reflect-the-owner-s-name-bhupesh-chaudhary-and-role-as-ias-officer-ladakh-replacing-all-generic-placeholder-identity-text",
+      "title": "Update the site's navigation bar, footer, page titles, and any 'About' or 'Summary' sections across all pages to reflect the owner's name 'Bhupesh Chaudhary' and role as IAS Officer, Ladakh — replacing all generic placeholder identity text.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -109,6 +124,20 @@
       "id": "AR-5",
       "summary": "Kids' study material section for hosting educational content created for children",
       "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Personalize the website with owner's name 'Bhupesh Chaudhary', IAS officer posted in Ladakh — update hero text, about section, and any placeholder content to reflect this identity",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Seed or pre-populate the backend resume data with a professional summary for Bhupesh Chaudhary identifying him as an IAS Officer currently posted in Ladakh, so the Resume section is not empty on first load.",
+      "reqIds": [
+        "REQ-12"
+      ],
       "status": "pending"
     }
   ],

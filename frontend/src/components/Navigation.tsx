@@ -32,9 +32,14 @@ export default function Navigation() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2 group">
-              <span className="font-serif text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
-                My Space
-              </span>
+              <div className="flex flex-col leading-tight">
+                <span className="font-serif text-base font-semibold text-foreground group-hover:text-primary transition-colors">
+                  Bhupesh Chaudhary
+                </span>
+                <span className="text-xs text-muted-foreground font-medium tracking-wide">
+                  IAS · Ladakh
+                </span>
+              </div>
             </Link>
 
             {/* Desktop Nav */}

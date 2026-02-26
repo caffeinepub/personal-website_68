@@ -7,28 +7,28 @@ const sections = [
     to: '/resume',
     icon: Briefcase,
     title: 'Resume',
-    description: 'My professional journey, skills, and work experience.',
+    description: 'My professional journey, skills, and administrative experience.',
     color: 'bg-primary/10 text-primary',
   },
   {
     to: '/blogs',
     icon: BookOpen,
     title: 'Blog',
-    description: 'Thoughts, stories, and reflections from everyday life.',
+    description: 'Thoughts, stories, and reflections from life in Ladakh and beyond.',
     color: 'bg-accent/10 text-accent',
   },
   {
     to: '/memories',
     icon: Image,
     title: 'Memories',
-    description: 'A gallery of cherished moments and photographs.',
+    description: 'A gallery of cherished moments from the valleys of Ladakh.',
     color: 'bg-chart-4/20 text-chart-4',
   },
   {
     to: '/articles',
     icon: FileText,
     title: 'Articles',
-    description: 'Long-form writing on topics I care deeply about.',
+    description: 'Long-form writing on governance, policy, and public service.',
     color: 'bg-chart-2/20 text-chart-2',
   },
   {
@@ -55,13 +55,13 @@ export default function HomePage() {
         <div className="hero-overlay absolute inset-0" />
         <div className="relative z-10 text-center px-4 py-20 max-w-3xl mx-auto">
           <p className="text-sm font-medium tracking-widest uppercase text-primary-foreground/80 mb-4">
-            Welcome to my corner of the internet
+            IAS Officer · Ladakh
           </p>
           <h1 className="font-serif text-5xl sm:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-            My Personal Space
+            Bhupesh Chaudhary
           </h1>
           <p className="text-lg text-primary-foreground/85 leading-relaxed mb-8 max-w-xl mx-auto">
-            A place where I share my professional journey, personal stories, cherished memories, and the learning materials I create for my kids.
+            Serving the people of Ladakh with dedication and integrity. Here I share my professional journey, personal stories, cherished memories from the Himalayas, and learning materials for my kids.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
             <Button asChild size="lg" className="rounded-full px-8">
@@ -110,8 +110,9 @@ export default function HomePage() {
       <section className="bg-secondary/50 border-y border-border py-14">
         <div className="max-w-2xl mx-auto px-4 text-center">
           <blockquote className="font-serif text-2xl italic text-foreground/80 leading-relaxed">
-            "Life is a collection of moments — I'm just making sure I don't forget any of them."
+            "Public service is not just a profession — it is a calling to make a difference in the lives of those we serve."
           </blockquote>
+          <p className="mt-4 text-sm text-muted-foreground font-medium">— Bhupesh Chaudhary, IAS</p>
         </div>
       </section>
     </main>
