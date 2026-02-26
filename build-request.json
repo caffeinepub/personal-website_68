@@ -1,0 +1,166 @@
+{
+  "kind": "build_request",
+  "title": "Personal Website with Resume, Blogs, Memories, Articles, and Kids' Study Material",
+  "projectName": "My Personal Space",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a warm, personal, and elegant visual theme for the entire website — using earthy, cozy tones (e.g., warm beige, deep forest green, soft terracotta) with clean serif/sans-serif typography and a layout that feels like a personal journal or digital home. Apply this theme consistently across all pages and sections.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A consistent color palette of warm, earthy tones is applied site-wide.",
+        "Typography uses a readable, warm font pairing for headings and body text.",
+        "Layout feels personal and inviting, not corporate."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Build a homepage with a hero section introducing the owner, a navigation bar linking to all major sections (Resume, Blogs, Memories, Articles, Kids' Study Material), and a brief summary of what the site offers.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section displays owner's name and a short personal bio.",
+        "Navigation bar has links to all five sections.",
+        "Homepage gives a clear overview of the site's purpose."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Implement a Resume section that displays structured professional information including a summary/about section, work experience timeline, education, and skills. Store and serve resume data from the backend.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Resume page renders work experience entries in chronological order.",
+        "Skills and education are clearly displayed.",
+        "Resume data is stored in the backend and fetched on load."
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Implement a Blog section where the owner can create, store, and display blog posts. Each post should have a title, content body, publication date, and optional tags. The blog listing page shows all posts as cards; clicking a card opens the full post.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Blog listing page shows all posts as summary cards with title, date, and tags.",
+        "Clicking a blog card navigates to the full blog post page.",
+        "Blog posts are persisted in the backend.",
+        "An admin form allows creating new blog posts."
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Implement a Memories section for storing and displaying personal photo memories. Each memory entry has a title, description, and an image URL. Display memories in a masonry-style or grid gallery layout.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Memories are displayed in a visually appealing grid or masonry layout.",
+        "Each memory card shows an image, title, and description.",
+        "Memory entries are stored in and fetched from the backend.",
+        "An admin form allows adding new memory entries."
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Implement an Articles section for publishing long-form articles. Each article has a title, rich text content, publication date, and an optional cover image URL. The listing page shows article cards; clicking opens the full article.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Articles listing page shows all articles as cards with title, date, and excerpt.",
+        "Full article view renders the complete content.",
+        "Articles are persisted in the backend.",
+        "An admin form allows creating new articles."
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Implement a Kids' Study Material section for hosting educational content created for children. Each item has a title, subject/category, description, and a content body or downloadable link. Items are displayed in a friendly, colorful grid organized by subject.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Study material is organized and filterable by subject/category.",
+        "Each item card shows title, subject, and description.",
+        "Study material entries are persisted in the backend.",
+        "An admin form allows adding new study material items.",
+        "The section uses a slightly more playful, child-friendly visual style within the overall theme."
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Add a simple admin mode (toggle or password-protected panel) that reveals 'Add New' forms for each section (Blog, Memories, Articles, Study Material, Resume). This allows the owner to manage content directly from the site without a separate CMS.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A single admin toggle or simple PIN entry reveals content management forms.",
+        "Each section has a corresponding form to add/edit entries.",
+        "Admin mode is hidden from regular visitors."
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Generate a warm, illustrative hero background image for the homepage featuring soft botanical/nature elements (leaves, soft light) in earthy tones to reinforce the personal and welcoming feel of the site.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section uses the generated background image.",
+        "Image is served from frontend/public/assets/generated.",
+        "Image complements the warm earthy color palette."
+      ]
+    }
+  ],
+  "constraints": [
+    "All backend logic must remain in a single Motoko actor file (backend/main.mo).",
+    "Do not edit any files listed under frontend.immutablePaths.",
+    "Generated images must be served as static assets from frontend/public/assets/generated — not routed through the backend."
+  ],
+  "nonGoals": [
+    "User authentication or login for visitors (admin toggle is owner-only and client-side).",
+    "Third-party CMS integration.",
+    "Email subscriptions or newsletters.",
+    "Comments or social interaction features.",
+    "External file/image upload storage (use URLs for images)."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Soft botanical hero background illustration with leaves, warm golden light rays, and gentle nature textures in earthy beige, forest green, and soft terracotta tones (hero-background.dim_1440x600.png)"
+    ],
+    "edits": []
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Personal website with sections for resume, blogs, memories, articles, and kids' study material.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Soft botanical hero background illustration with leaves, warm golden light rays, and gentle nature textures in earthy beige, forest green, and soft terracotta tones (hero-background.dim_1440x600.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-warm-personal-and-elegant-visual-theme-for-the-entire-website-using-earthy-cozy-tones-e-g-warm-beige-deep-forest-green-soft-terracotta-with-clean-serif-sans-serif-typography-and-a-layout-that-feels-like-a-personal-journal-or-digital-home-apply-this-theme-consistently-across-all-pages-and-sections",
+      "title": "Create a warm, personal, and elegant visual theme for the entire website — using earthy, cozy tones (e.g., warm beige, deep forest green, soft terracotta) with clean serif/sans-serif typography and a layout that feels like a personal journal or digital home. Apply this theme consistently across all pages and sections.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-homepage-with-a-hero-section-introducing-the-owner-a-navigation-bar-linking-to-all-major-sections-resume-blogs-memories-articles-kids-study-material-and-a-brief-summary-of-what-the-site-offers",
+      "title": "Build a homepage with a hero section introducing the owner, a navigation bar linking to all major sections (Resume, Blogs, Memories, Articles, Kids' Study Material), and a brief summary of what the site offers.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-resume-section-that-displays-structured-professional-information-including-a-summary-about-section-work-experience-timeline-education-and-skills-store-and-serve-resume-data-from-the-backend",
+      "title": "Implement a Resume section that displays structured professional information including a summary/about section, work experience timeline, education, and skills. Store and serve resume data from the backend.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-blog-section-where-the-owner-can-create-store-and-display-blog-posts-each-post-should-have-a-title-content-body-publication-date-and-optional-tags-the-blog-listing-page-shows-all-posts-as-cards-clicking-a-card-opens-the-full-post",
+      "title": "Implement a Blog section where the owner can create, store, and display blog posts. Each post should have a title, content body, publication date, and optional tags. The blog listing page shows all posts as cards; clicking a card opens the full post.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-memories-section-for-storing-and-displaying-personal-photo-memories-each-memory-entry-has-a-title-description-and-an-image-url-display-memories-in-a-masonry-style-or-grid-gallery-layout",
+      "title": "Implement a Memories section for storing and displaying personal photo memories. Each memory entry has a title, description, and an image URL. Display memories in a masonry-style or grid gallery layout.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-an-articles-section-for-publishing-long-form-articles-each-article-has-a-title-rich-text-content-publication-date-and-an-optional-cover-image-url-the-listing-page-shows-article-cards-clicking-opens-the-full-article",
+      "title": "Implement an Articles section for publishing long-form articles. Each article has a title, rich text content, publication date, and an optional cover image URL. The listing page shows article cards; clicking opens the full article.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-kids-study-material-section-for-hosting-educational-content-created-for-children-each-item-has-a-title-subject-category-description-and-a-content-body-or-downloadable-link-items-are-displayed-in-a-friendly-colorful-grid-organized-by-subject",
+      "title": "Implement a Kids' Study Material section for hosting educational content created for children. Each item has a title, subject/category, description, and a content body or downloadable link. Items are displayed in a friendly, colorful grid organized by subject.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-simple-admin-mode-toggle-or-password-protected-panel-that-reveals-add-new-forms-for-each-section-blog-memories-articles-study-material-resume-this-allows-the-owner-to-manage-content-directly-from-the-site-without-a-separate-cms",
+      "title": "Add a simple admin mode (toggle or password-protected panel) that reveals 'Add New' forms for each section (Blog, Memories, Articles, Study Material, Resume). This allows the owner to manage content directly from the site without a separate CMS.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-a-warm-illustrative-hero-background-image-for-the-homepage-featuring-soft-botanical-nature-elements-leaves-soft-light-in-earthy-tones-to-reinforce-the-personal-and-welcoming-feel-of-the-site",
+      "title": "Generate a warm, illustrative hero background image for the homepage featuring soft botanical/nature elements (leaves, soft light) in earthy tones to reinforce the personal and welcoming feel of the site.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Resume section to showcase professional experience and skills",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Blog section for writing and publishing blog posts",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Memories section for personal photos and moments",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Articles section for publishing long-form articles",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Kids' study material section for hosting educational content created for children",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Personal Website",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

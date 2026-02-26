@@ -1,0 +1,73 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-26T03:55:20.816Z",
+  "summary": "The diff implements most of the requested requirements well, including backend Motoko actor with all data types and CRUD operations, frontend pages for all five sections, admin panel with PIN-based access, navigation, and component structure. However, a few requirements have gaps or cannot be fully confirmed from the available diff.",
+  "missing_requirements": [
+    {
+      "id": "REQ-7",
+      "requirement": "Study material items should be filterable by subject/category on the listing page.",
+      "reason": "The StudyMaterialCard component and AddStudyMaterialForm exist, but no StudyMaterialPage file is included in the visible diff to confirm subject filtering/tab UI is implemented on the listing page.",
+      "evidence": [
+        "frontend/src/components/StudyMaterialCard.tsx",
+        "frontend/src/components/admin/AddStudyMaterialForm.tsx"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "requirement": "Hero background image must be generated and served from frontend/public/assets/generated as hero-background.dim_1440x600.png.",
+      "reason": "No image file (hero-background.dim_1440x600.png) appears in the diff under frontend/public/assets/generated. The HomePage file is among the omitted files, so usage cannot be confirmed either.",
+      "evidence": []
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Internet Identity (II) login integration via useInternetIdentity hook and AuthClient.",
+      "reason": "The build request explicitly states user authentication/login for visitors is a non-goal. A full Internet Identity auth flow with AuthClient, DelegationIdentity, and login/clear functions was implemented but not requested.",
+      "evidence": [
+        "frontend/src/hooks/useInternetIdentity.ts",
+        "frontend/src/hooks/useActor.ts"
+      ]
+    }
+  ],
+  "confidence": 0.72,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/AdminToggle.tsx",
+    "frontend/src/components/ArticleCard.tsx",
+    "frontend/src/components/BlogPostCard.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/MemoryCard.tsx",
+    "frontend/src/components/Navigation.tsx",
+    "frontend/src/components/StudyMaterialCard.tsx",
+    "frontend/src/components/WorkExperienceTimeline.tsx",
+    "frontend/src/components/admin/AddArticleForm.tsx",
+    "frontend/src/components/admin/AddBlogPostForm.tsx",
+    "frontend/src/components/admin/AddMemoryForm.tsx",
+    "frontend/src/components/admin/AddStudyMaterialForm.tsx",
+    "frontend/src/components/admin/AdminPanel.tsx",
+    "frontend/src/components/admin/EditResumeForm.tsx",
+    "frontend/src/contexts/AdminContext.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/hooks/useStudyMaterialFilter.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/ArticlePage.tsx",
+    "frontend/src/pages/ArticlesListingPage.tsx",
+    "frontend/src/pages/BlogListingPage.tsx",
+    "frontend/src/pages/BlogPostPage.tsx",
+    "frontend/src/pages/HomePage.tsx",
+    "frontend/src/pages/MemoriesPage.tsx",
+    "frontend/src/pages/ResumePage.tsx",
+    "frontend/src/pages/StudyMaterialPage.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}
